@@ -2,13 +2,25 @@
 <html lang="en">
 
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
     <style>
+        input::placeholder {
+            color: gray
+        }
+
+        #answer {
+            color: red;
+            line-height: 2;
+            font-family: 'Caveat';
+        }
     </style>
 </head>
 
 <body>
     <h1>The magic 8 ball</h1>
-    <input /><br />
+    <input placeholder="Ask me anything!" /><br />
     <x-magic />
     <script>
         class Magic8Ball extends HTMLElement{
